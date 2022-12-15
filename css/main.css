@@ -379,13 +379,13 @@ body {
   display: flex;
   padding-top: 30px;
 }
+.footer_info ul li i {
+  font-size: 30px;
+  padding-right: 16px;
+}
 .footer_info p {
   line-height: 1.6;
   font-size: 14px;
-}
-.footer_info ul li i {
-  font-size: 30px;
-  padding-right: 20px;
 }
 .footer_menu {
   display: flex;
@@ -396,7 +396,7 @@ body {
 .footer_menu > li > a {
   /* >표시로 바로밑에 자식요소 지정 */
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 700;
   margin-bottom: 56px;
   display: inline-block;
   /* 빈공간도 a로 인식해서 padding주면 안됨 */
@@ -407,15 +407,11 @@ body {
   display: inline-block;
   /* 마진 적용화려면 반드시 inlineblock */
 }
-.copyright {
-  padding-top: 50px;
-  font-weight: 12px;
-  color: #f2f2f2;
-}
-
 .bottom_logo {
   padding-bottom: 38px;
 }
 .copyright {
   padding-top: 50px;
+  font-size: 12px;
+  color: #f2f2f2;
 }
