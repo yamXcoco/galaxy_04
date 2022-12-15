@@ -1,0 +1,42 @@
+body{
+    color: red;
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #ddd;
+    position: relative;
+}
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: orangered;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 모서리 때문에 position정렬 아래로 내려감 그래서 transform으로 반만 이동해서 가운데 정렬 */
+    /* width나 height가 달라지더라도 가운데 정렬이 될 수 있도록 퍼센트로 정렬하는게 좋음 */
+}
+/* .item {
+    width: 300px;
+    height: 120px;
+    background-color: orangered;
+    position: absolute;
+    /* 영역위에 떠 있음 */
+    /* item의 부모(box)요소에 포지션 relative 넣어줘야 top/left/right/bottom 전부 시용가능 */
+    /* left: 160px;
+    bottom: 50px; */
+    /* 지정한 숫자만큼 남기고 지시한 방향으로 붙음 
+}
+*/
+.box p::after {
+    content: 'hello';
+    /* p뒤에 글적기 가능 */
+}
+.box p::before{
+    content: 'css';
+    /* p앞에 글적기 */
+}
